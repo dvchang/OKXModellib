@@ -37,11 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16638D23AA2F32E84D271C1C /* OKXModellib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OKXModellib.podspec; path = ../OKXModellib.podspec; sourceTree = "<group>"; };
+		16638D23AA2F32E84D271C1C /* OKXModellib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OKXModellib.podspec; path = ../OKXModellib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2B69E318056B9E23CAFBF993 /* Pods_OKXModellib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OKXModellib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7357C2E76FE1A99F7EBF4E /* Pods-OKXModellib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKXModellib_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OKXModellib_Tests/Pods-OKXModellib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CC38DC8C9F59D041E07AC15 /* Pods-OKXModellib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKXModellib_Example.debug.xcconfig"; path = "Target Support Files/Pods-OKXModellib_Example/Pods-OKXModellib_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		59DB4182AE2C98A76A9A10AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		59DB4182AE2C98A76A9A10AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* OKXModellib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKXModellib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +62,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		846615FCA33AA3FA9B353D11 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		846615FCA33AA3FA9B353D11 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A81D371ADE97E4464F4053D6 /* Pods_OKXModellib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OKXModellib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AF586ABC1CEF13B3CF364D /* Pods-OKXModellib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKXModellib_Example.release.xcconfig"; path = "Target Support Files/Pods-OKXModellib_Example/Pods-OKXModellib_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				2F7357C2E76FE1A99F7EBF4E /* Pods-OKXModellib_Tests.debug.xcconfig */,
 				E27BE8AC97053B2ED9BD77F2 /* Pods-OKXModellib_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +324,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OKXModellib_Example/Pods-OKXModellib_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/OKXModellib/OKXModellib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OKXModellib.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

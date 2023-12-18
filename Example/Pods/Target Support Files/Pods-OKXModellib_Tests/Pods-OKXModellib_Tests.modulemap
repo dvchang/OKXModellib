@@ -1,0 +1,6 @@
+framework module Pods_OKXModellib_Tests {
+  umbrella header "Pods-OKXModellib_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

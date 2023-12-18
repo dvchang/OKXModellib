@@ -7,9 +7,10 @@
 //
 
 #import "OKXViewController.h"
+#import "OKXModellib/OKXDataFetcher.h"
 
 @interface OKXViewController ()
-
+@property(nonatomic, strong) OKXDataFetcher *fetcher;
 @end
 
 @implementation OKXViewController
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.fetcher = [[OKXDataFetcher alloc] init];
+    [self.fetcher fetchData:^(NSArray<OKXDataItem *> * _Nullable dataArray, NSError * _Nullable error) {
+        NSLog(@" data %@", dataArray);
+    }];
 }
 
 - (void)didReceiveMemoryWarning
