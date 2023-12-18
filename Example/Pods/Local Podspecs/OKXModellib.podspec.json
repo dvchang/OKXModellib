@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/dvchang/OKXModellib.git",
-    "tag": "0.1.0"
+    "tag": "v0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
   "source_files": "OKXModellib/Classes/**/*",
   "dependencies": {

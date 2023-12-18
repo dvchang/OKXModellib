@@ -24,7 +24,7 @@
 @end
 
 @interface OKXDataFetcher()
-@property(nonatomic, strong) AFHTTPSessionManager *manager;
+@property(nonatomic, strong) AFURLSessionManager *manager;
 @end
 
 @implementation OKXDataFetcher

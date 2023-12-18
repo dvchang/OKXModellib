@@ -25,10 +25,10 @@ OKXModellib is used to fetch a list of image and video url from fixed server end
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'dvchang' => 'dvchangyuan@gmail.com' }
-  s.source           = { :git => 'https://github.com/dvchang/OKXModellib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/dvchang/OKXModellib.git', :tag => 'v0.1.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'OKXModellib/Classes/**/*'
   
